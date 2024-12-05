@@ -1,0 +1,9 @@
+sudo nmap --script http-title 192.168.56.102
+sudo nmap --script http-methods 192.168.56.102
+sudo nmap --script http-enum 192.168.56.102
+sudo nmap --script vuln 192.168.56.102
+sudo nmap --script http-enum 192.168.56.102
+
+nikto -h 192.168.56.102 -o pelda2.htm
+
+skipfish -o 202 http://192.168.56.102
