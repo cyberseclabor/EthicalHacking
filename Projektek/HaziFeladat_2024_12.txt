@@ -1,0 +1,10 @@
+Hálózati alkalmazások
+1. Sniffer alkalmazások készítése
+2. Hálózati szkenner készítése (hasonló, mint a netdiscover)
+3. Portscanner készítése
+
+
+Forensics alkalmazások
+1. SqLite browser készítése
+2. Elmentett WiFi adatok kiolvasása
+
