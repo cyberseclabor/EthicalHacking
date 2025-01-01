@@ -1,0 +1,1 @@
+Ebben a könyvtárban találhatók az nmap script-ek futtatási eredményei, illetve a hozzájuk tartozó hálózati forgalom.
