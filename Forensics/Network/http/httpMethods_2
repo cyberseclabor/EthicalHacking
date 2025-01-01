@@ -1,0 +1,12 @@
+# Nmap 7.94SVN scan initiated Thu Dec 19 09:48:49 2024 as: /usr/lib/nmap/nmap -p 80 --script http-methods --script-args http-methods.test-all=true -oN httpMethods_2 192.168.56.102
+Nmap scan report for 192.168.56.102
+Host is up (0.0036s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+| http-methods: 
+|   Supported Methods: GET HEAD POST OPTIONS DELETE PUT CONNECT TRACE
+|_  Potentially risky methods: DELETE PUT CONNECT TRACE
+MAC Address: 08:00:27:AC:36:7A (Oracle VirtualBox virtual NIC)
+
+# Nmap done at Thu Dec 19 09:49:02 2024 -- 1 IP address (1 host up) scanned in 13.40 seconds
