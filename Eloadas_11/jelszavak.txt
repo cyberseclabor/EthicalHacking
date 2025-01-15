@@ -1,1 +1,2 @@
-jelszó
+Jelszó a pdf-hez: password12
+
