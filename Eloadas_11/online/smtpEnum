@@ -1,0 +1,4 @@
+A Metasploitable 2 VM IP címe: 192.168.56.254
+
+Felhasználók keresése
+smtp-user-enum -M VRFY -U users -t 192.168.56.254
