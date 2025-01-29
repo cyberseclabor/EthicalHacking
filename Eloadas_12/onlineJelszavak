@@ -1,3 +1,5 @@
+A cél az, hogy az áldozatgép (Metasploitable2 VM) szolgáltatásaihoz tartozó jelszavak megkeresése (szótárfile-ból) az "nmap" portscanner segítségével történjen meg.
+
 A Metasploitable2 VM IP címe: 192.168.56.254
 
 Szótáralapú támadások különböző szolgáltatások ellen.
